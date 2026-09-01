@@ -1,0 +1,219 @@
+{
+  "schema_version": "phase1-if-implementation-manifest-v1",
+  "manifest_id": "if-implementation-manifest-sha256:4aec0f7326e26401058cf6568ad398bd779beed10df356f6c5deb2ef7e1b417c",
+  "hash_algorithms": {
+    "whole_file_sha256": "sha256(raw_regular_file_bytes)",
+    "normalized_ast_sha256": "sha256(utf8(ast.dump(function_node,annotate_fields=true,include_attributes=false)))",
+    "code_object_sha256": "sha256(canonical_json(phase1-python-code-fingerprint-v1))"
+  },
+  "trusted_modules": [
+    {
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract"
+    },
+    {
+      "module_path": "src/turboguard/core/turboguard.py",
+      "module": "turboguard.core.turboguard"
+    }
+  ],
+  "production_comparator_symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::_raw_lt_kernel",
+  "policy_binding": {
+    "policy_path": "plan/phase1/artifact_policy.json",
+    "policy_id": "turboguard-phase1-artifact-policy-v2",
+    "policy_field": "implementation_trust_contract",
+    "task00_policy_digest_required": true,
+    "digest_record_path": "pre_edit/source_sha256.json"
+  },
+  "entries": [
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::_bit_hex_array",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "_bit_hex_array",
+      "implementation_role": "bit_pattern_helper",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "f02fa806399bd9cc2c42bceaed9b1aa2d8542418e3499f36de9c6999bd2f4414",
+      "code_object_sha256": "9e584a0d703eaf454613b466a78d1055469815db996482645fea9eb08c71d26d"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::_canonical_ge_kernel",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "_canonical_ge_kernel",
+      "implementation_role": "canonical_comparator_kernel",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "05b3c74ca0b393cedcc538514b593115307857c648ba792c910436b38f4b39a9",
+      "code_object_sha256": "e09f25452ebeb699106efae0a8062a3f0c344ea4b9dd5bd916fcc4c6e816b92d"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::_canonical_tau_kernel",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "_canonical_tau_kernel",
+      "implementation_role": "strict_boundary_transform_kernel",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "886078ce33026b62bdcb2cbd80cdc98a7c2f99ae5c767eaea311684cf0910946",
+      "code_object_sha256": "924abd082ca463efa4ba2aeb13b41d62dd66c5653579845b538fb5bb87f413af"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::_coerce_raw_scores",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "_coerce_raw_scores",
+      "implementation_role": "raw_score_validator",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "e0388201f8fb9a0770a3c3ce2e0ee518a4139c219f121231ee4a342c44d5f22c",
+      "code_object_sha256": "63373892dd26703d1b049da9e8b60e78e4fc9628357870dedde6144975f29bef"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::_coerce_raw_threshold",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "_coerce_raw_threshold",
+      "implementation_role": "raw_threshold_validator",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "f9246d73066e1a7dccf72eaca6bfa6298722da75852e0a0285b17148aec7d392",
+      "code_object_sha256": "13d4fd33f2a95efb28b069df03662b9cdd2c5e58d9052b54165c6e1dec2dd140"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::_immutable_array",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "_immutable_array",
+      "implementation_role": "immutable_output_helper",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "92dad5ff56a64763a315854de741fbaa28958c3d932efe59b2c61199018c2fb5",
+      "code_object_sha256": "f1a13e7fdcf0f6a073d913427ca5a42fc26acaa53f26d57f2969dde4d395952a"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::_negate_kernel",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "_negate_kernel",
+      "implementation_role": "orientation_transform_kernel",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "73c00316996a208c0d59ce4ed8d321d1cfc4ae834b88c47590b351a80af1ec8f",
+      "code_object_sha256": "471252f3b983f8bc5e18baff76445d6c5fec68243fa5eb8f77397259b2fbb9b4"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::_raw_lt_kernel",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "_raw_lt_kernel",
+      "implementation_role": "production_comparator_kernel",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "b53ca9dca0bebfc369d80a28813ae0a350d3b430cdb5e25ef6edc1a8a6df057c",
+      "code_object_sha256": "343f2279f48607b46192a5f462bb4bfb57f7284421f5e99ef3b8ab98528f2f17"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::_require_deeply_frozen_json",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "_require_deeply_frozen_json",
+      "implementation_role": "runtime_immutability_attester",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "dd4f3327a2ed6826c784893dac2fe1d7da487a08cdb427fff27dd979281b8d6e",
+      "code_object_sha256": "6ae1d7b021dffd01cdd836ca96be3bc6422ecdcab85023abf5e7abafd5d9169d"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::_verify_live_numpy_dependencies",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "_verify_live_numpy_dependencies",
+      "implementation_role": "numpy_dependency_attester",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "0262216584aa6f1b7526b83b76dd973d56b3609f5ffefe44c9524cd235c24e22",
+      "code_object_sha256": "8d84a46c059b102f54859036ecab02c727859194788566d801e9a8f2ee632ec7"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::_verify_live_numpy_ufuncs",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "_verify_live_numpy_ufuncs",
+      "implementation_role": "numpy_ufunc_attester",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "006ae1e31b2ef755bdb6ae3776877c77e2f34efae775e43a787f41a5e84e7b07",
+      "code_object_sha256": "11b681ceaacb49570728e09d510a1b0486aaa34ea22c75f42d9c1263dee3a856"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::apply_if_score_contract",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "apply_if_score_contract",
+      "implementation_role": "public_score_contract",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "aa4e2a9393ab7665a964b0232447e9c96f2a4d74604b56b7ff914aea2418fdd4",
+      "code_object_sha256": "214acaec69cabb5bdaa222b5d1b9445035db8174ce05585b978058a9d46e59d7"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::attest_if_score_contract",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "attest_if_score_contract",
+      "implementation_role": "fixed_path_implementation_attester",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "9f9ebf7e894d39fb5c3eea8f41a291fa862c327c715cd8a47321f331b0b7dd65",
+      "code_object_sha256": "ff0c6a74078bd41fe9ced199a39c908aca3dad252b6c320a4a94cbc3c230a1c5"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::contract_spec",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "contract_spec",
+      "implementation_role": "declarative_score_contract",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "ccb322e32e1b71de1c28d5953145b91bd75c05f7fdbed09a821ac9b1f9064ec5",
+      "code_object_sha256": "7273b92107c9420c6074753e9ffa4f8930e0b06a4143ec9a0dd0913a3c8dfb18"
+    },
+    {
+      "symbol_id": "src/turboguard/core/if_score_contract.py::turboguard.core.if_score_contract::float_bit_pattern_hex",
+      "module_path": "src/turboguard/core/if_score_contract.py",
+      "module": "turboguard.core.if_score_contract",
+      "qualname": "float_bit_pattern_hex",
+      "implementation_role": "public_bit_pattern_encoder",
+      "whole_file_sha256": "6a20940c58f37d63e8013025f2472a193c0532183ca2a9fcc571403f4d8b23a7",
+      "normalized_ast_sha256": "2eb0400f4316ab09a4845f497286a39c0097c4355c1e6fa8a83ed5ac59ef3bc9",
+      "code_object_sha256": "9b5424725347589f2809996f85fbf9a479f8407f6423361a16161e7e14544d6e"
+    },
+    {
+      "symbol_id": "src/turboguard/core/turboguard.py::turboguard.core.turboguard::TurboGuard.decision_details",
+      "module_path": "src/turboguard/core/turboguard.py",
+      "module": "turboguard.core.turboguard",
+      "qualname": "TurboGuard.decision_details",
+      "implementation_role": "production_cascade_consumer",
+      "whole_file_sha256": "0e0455f23fbc52afd59e8c585991354384b73bfe496d784617a81e89d45ad069",
+      "normalized_ast_sha256": "b82ccab34daa71d4ce7f198feba89d4df4f3f2c3862b8aeb882e29622c1bce76",
+      "code_object_sha256": "da535d69143a362b9e8c698cad9b676d524f9f7c0ed8b55f705c9ef11c29caf7"
+    },
+    {
+      "symbol_id": "src/turboguard/core/turboguard.py::turboguard.core.turboguard::TurboGuard.profile_decision",
+      "module_path": "src/turboguard/core/turboguard.py",
+      "module": "turboguard.core.turboguard",
+      "qualname": "TurboGuard.profile_decision",
+      "implementation_role": "production_profile_cascade_consumer",
+      "whole_file_sha256": "0e0455f23fbc52afd59e8c585991354384b73bfe496d784617a81e89d45ad069",
+      "normalized_ast_sha256": "ce2f9813e3aca81679d7f6238e2645ec09021c879c7fb3908b127f94bd648e97",
+      "code_object_sha256": "fc70bed23517c8149acdecf67c2881f613bf3b403f7ec9357461d73ccefb25b2"
+    },
+    {
+      "symbol_id": "src/turboguard/core/turboguard.py::turboguard.core.turboguard::isolation_forest_anomaly_score",
+      "module_path": "src/turboguard/core/turboguard.py",
+      "module": "turboguard.core.turboguard",
+      "qualname": "isolation_forest_anomaly_score",
+      "implementation_role": "production_anomaly_score_adapter",
+      "whole_file_sha256": "0e0455f23fbc52afd59e8c585991354384b73bfe496d784617a81e89d45ad069",
+      "normalized_ast_sha256": "5d3175795ef9578c708eecf84bcf0db47ef85f3d6549e635201a2f15d32d4443",
+      "code_object_sha256": "9b6c703548284c1d9e35229e6299a039f3389304626a3a8e06ea29fbc3b68661"
+    },
+    {
+      "symbol_id": "src/turboguard/core/turboguard.py::turboguard.core.turboguard::isolation_forest_reject",
+      "module_path": "src/turboguard/core/turboguard.py",
+      "module": "turboguard.core.turboguard",
+      "qualname": "isolation_forest_reject",
+      "implementation_role": "production_raw_decision_adapter",
+      "whole_file_sha256": "0e0455f23fbc52afd59e8c585991354384b73bfe496d784617a81e89d45ad069",
+      "normalized_ast_sha256": "cd0bf54ea07257594d1ae38ffd529ad8776ef3724ca24ace707cc26b3a84f488",
+      "code_object_sha256": "20c390905a68dbe8723269eae09e6f7733ccd60185cd7a2fb0457d8e064375ab"
+    }
+  ]
+}
